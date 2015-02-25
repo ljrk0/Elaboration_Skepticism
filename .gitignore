@@ -112,3 +112,6 @@ sympy-plots-for-*.tex/
 
 # compiled
 *.pdf
+
+# vim files
+*.un~
