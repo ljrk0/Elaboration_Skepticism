@@ -1,13 +1,12 @@
 \documentclass[12pt,a4paper,final]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
 \usepackage{csquotes}
-%\usepackage{natbib}
-%\usepackage{url}
-
+%
+% make nice parskips
+\setlength{\parskip}{1em}
+%
+% bibliography management
 \usepackage[
     natbib=true,
     backend=biber,
@@ -15,23 +14,9 @@
     citestyle=numeric,
     sorting=nty,
     sortlocale=de_DE,
-    %url=true, 
-    %doi=true,
-    %eprint=true,
-    %urldate=true
 ]{biblatex}
 \addbibresource{text.bib}
-%\DeclareFieldFormat{url}{\newline\url{#1}}
-%\DeclareFieldFormat{urldate}{\addcomma\space\bibstring{urlseen}\space#1}
-
-%\renewbibmacro*{url}{%
-%     \printtext[formaturl]{%
-%   \printfield{url}}%
-%     \printtext[urldate]{%
-%       \printurldate}%
-%}
 %
-
 % change heading/footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -43,38 +28,26 @@
 \rfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0.1pt}
-
-% standardize pagelayout
+%
+% OPT: standardize pagelayout
 %\usepackage[linenumbers,lines=38,chars=65,noindent]{stdpage}
-
+%
+% use Times New Roman
+\usepackage{newtxtext}
+%
+% layouts:
+% senat:
+%\usepackage[left=4.5cm,right=4.5cm,top=1cm,bottom=1.5cm]{geometry}
+% standard
+\usepackage[left=4cm,right=2cm,top=3cm,bottom=3cm]{geometry}
+% correction
+%\usepackage[left=2cm,right=8cm,top=3cm,bottom=3cm]{geometry}
+%
 \title{Skeptizismus - Flucht der Philosophie vor der Frage nach der Erkenntnis?}
 \author{Leonard König}
 %\date
 \linespread{1.5}
-
-% Use Times New Roman
-\usepackage{newtxtext}
-
-% alternative font
-%\usepackage{helvet}
-%\renewcommand{\familydefault}{\sfdefault}
-
-% for senat:
-%\usepackage[left=4.5cm,right=4.5cm,top=1cm,bottom=1.5cm]{geometry}
-\usepackage[left=4cm,right=2cm,top=3cm,bottom=3cm]{geometry}
-
-% correction layout
-%\usepackage[left=2cm,right=8cm,top=3cm,bottom=3cm]{geometry}
-
-
-% NOTES
-% WC: 12350
-% WCounter in ~/scripts
-
-\begin{document}%Chronologie hinzufuegen?
-%
-% shouldnt be needed (incl. in maketitle)
-%\thispagestyle{plain}
+\begin{document}
 \maketitle
 \begin{Large}
 \begin{center}
@@ -93,61 +66,51 @@ Abgabetermin: 09.03.2015
 \pagenumbering{arabic}
 \setcounter{page}{2}
 %
-%
-%
 \subsubsection*{Themenwahl und allgemeiner Überblick}
-Mit meiner Arbeit werde ich untersuchen, inwiefern der Skeptizismus als Flucht der Philosophie vor der Frage nach der Erkenntnis verstanden werden kann. Dies geschieht unter Erläuterung der philosophie-geschichtlichen Aspekte, wie den Wandlungen des Skeptizismus von der Antike bis zur Neuzeit, sowie der sich in diesem Prozess veränderten Zielrichtung. Abschließend werde ich in einem Fazit zu der Leitfrage Stellung beziehen und mich dem Versuch widmen, diese zu beantworten. Meine Präsentation werde ich mit einer %modifizierung statt aenderung
- \LaTeX -Präsentation unterstützen.
-%Zu Beginn erfolgt eine Vorstellung der historischen Wandlungen des Skeptizismus.
+Mit meiner Arbeit werde ich untersuchen, inwiefern der Skeptizismus als Flucht der Philosophie vor der Frage nach der Erkenntnis verstanden werden kann. Dies geschieht unter Erläuterung der philosophie-geschichtlichen Aspekte, wie den Wandlungen des Skeptizismus von der Antike bis zur Neuzeit, sowie der sich in diesem Prozess veränderten Zielrichtung. Abschließend werde ich in einem Fazit zu der Leitfrage Stellung beziehen und mich dem Versuch widmen, diese zu beantworten. Meine Präsentation werde ich mit einer \LaTeX -Präsentation unterstützen.
+%
 \subsection*{Über den Skeptizismus}
-In einer sich ständig im Umbruch befindenden Gesellschaft hatte eine skeptisch-kritische Haltung schon immer eine wichtige Rolle gespielt - und wird diese weiterhin einnehmen. Jedoch erfährt der sich immer wieder weiterentwickelnde Skeptizismus, erklärbar durch die Wandlungen über die Epochen hinweg, \emph{gerade} in der aktuellen Zeit im wissenschaftlichen Bereich eine starke Resonanz.\\%ueberleitung
+In einer sich ständig im Umbruch befindenden Gesellschaft hatte eine skeptisch-kritische Haltung schon immer eine wichtige Rolle gespielt - und wird diese weiterhin einnehmen. Jedoch erfährt der sich immer wieder weiterentwickelnde Skeptizismus, erklärbar durch die Wandlungen über die Epochen hinweg, \emph{gerade} in der aktuellen Zeit im wissenschaftlichen Bereich eine starke Resonanz.
 
-Ich habe mich seit langem für den Skeptizismus interessiert, auch wenn dies aus einer wohl nicht ganz richtigen Interpretation von Sokrates' \glqq Ich weiß, dass ich nichts weiß\grqq\ entstand. Diese Überlegung erschien mir schon immer logisch, auch wenn ich heute weiß, dass Sokrates aller Wahrscheinlichkeit nach diesen Satz nicht nach skeptischen Gesichtspunkten auslegte, sondern vielmehr im Hinblick auf die sokratische Methode eines immerwährenden Zweifels um zur Erkenntnis zu gelangen.\\
+Ich habe mich seit langem für den Skeptizismus interessiert, auch wenn dies aus einer wohl nicht ganz richtigen Interpretation von Sokrates' \glqq Ich weiß, dass ich nichts weiß\grqq\ entstand. Diese Überlegung erschien mir schon immer logisch, auch wenn ich heute weiß, dass Sokrates aller Wahrscheinlichkeit nach diesen Satz nicht nach skeptischen Gesichtspunkten auslegte, sondern vielmehr im Hinblick auf die sokratische Methode eines immerwährenden Zweifels um zur Erkenntnis zu gelangen.
 
-Den Skeptizismus als Problem- oder Streitfrage hinsichtlich seiner Sinnhaftigkeit als epistemologische Position zu bewerten und gegebenenfalls zu kritisieren, kommt häufig vor. Viele Gegner halten ihn für unergiebig bis zu einer Rechtfertigung für eine etwaige lethargisch-nihilistische Haltung. Einerseits kann ich diese Kritik verstehen, da ich mich oft mit diesem Thema auseinandergesetzt habe, andererseits bin ich jedoch der Meinung, dass der Skeptizismus mehr darstellt, als die Kritiker in ihm sehen wollen, nämlich \glqq bloß\grqq\ als einen erkenntnistheoretischen Standpunkt. %ueberarbeiten?
-Ich überprüfe, ob man solche hoch abstrakten philosophischen Thematiken auch außerhalb ihres Selbstzweckes begründen kann, %Sinn geben
-denn die Frage nach dem Zweck und der Sinnhaftigkeit des Skeptizismus baut eine Brücke zwischen Metaphysik und Erkenntnistheorie auf und hinterfragt grundlegend die Sinnhaftigkeit mancher philosophischer Überlegungen, schließlich bauen auch viele der - im Vergleich zur Erkenntnistheorie beziehungsweise gar zur Metaphysik - greifbareren Theorien auf bestimmte Axiome und Weltanschauungen auf. Es ist ein Dilemma: Entweder wir versuchen die Welt so anzunehmen, wie wir sie direkt scheinen zu sehen - gehen dabei aber das Risiko ein, sehr viele nur scheinbar gegebene Prämissen anzunehmen und machen damit unsere Theorien sehr angreifbar bezüglich ihrer Stichhaltigkeit, oder wir nehmen dabei eine etwaige sehr schnelle Vergänglichkeit unserer Thesen in Kauf.\\
-Im Gegensatz zu solchen, anderen philosophischen Ansätzen (wie unter anderem dem Rationalismus, Empirismus und sogar Kants Kritizismus) ist der Skeptizismus auf Grund seiner bestechenden Logik und seiner wenigen bis keinen Forderungen in sich sehr geschlossen, kann dadurch aber nur in sehr geringem Maße Aussagen über die Welt treffen und ist deshalb vorerst zum Zweck der Erkenntnisgewinnung untauglich.\\ %TODO Ueberarbeiten; Beispiele: konkretere phil. Ueberlegungen
+Den Skeptizismus als Problem- oder Streitfrage hinsichtlich seiner Sinnhaftigkeit als epistemologische Position zu bewerten und gegebenenfalls zu kritisieren, kommt häufig vor. Viele Gegner halten ihn für unergiebig bis zu einer Rechtfertigung für eine etwaige lethargisch-nihilistische Haltung. Einerseits kann ich diese Kritik verstehen, da ich mich oft mit diesem Thema auseinandergesetzt habe, andererseits bin ich jedoch der Meinung, dass der Skeptizismus mehr darstellt, als die Kritiker in ihm sehen wollen, nämlich \glqq bloß\grqq\ als einen erkenntnistheoretischen Standpunkt.
+Ich überprüfe, ob man solche hoch abstrakten philosophischen Thematiken auch außerhalb ihres Selbstzweckes begründen kann, denn die Frage nach dem Zweck und der Sinnhaftigkeit des Skeptizismus baut eine Brücke zwischen Metaphysik und Erkenntnistheorie auf und hinterfragt grundlegend die Sinnhaftigkeit mancher philosophischer Überlegungen, schließlich bauen auch viele der - im Vergleich zur Erkenntnistheorie beziehungsweise gar zur Metaphysik - greifbareren Theorien auf bestimmte Axiome und Weltanschauungen auf. Es ist ein Dilemma: Entweder wir versuchen die Welt so anzunehmen, wie wir sie direkt scheinen zu sehen - gehen dabei aber das Risiko ein, sehr viele nur scheinbar gegebene Prämissen anzunehmen und machen damit unsere Theorien sehr angreifbar bezüglich ihrer Stichhaltigkeit, oder wir nehmen dabei eine etwaige sehr schnelle Vergänglichkeit unserer Thesen in Kauf.\\
+Im Gegensatz zu solchen, anderen philosophischen Ansätzen (wie unter anderem dem Rationalismus, Empirismus und sogar Kants Kritizismus) ist der Skeptizismus auf Grund seiner bestechenden Logik und seiner wenigen bis keinen Forderungen in sich sehr geschlossen, kann dadurch aber nur in sehr geringem Maße Aussagen über die Welt treffen und ist deshalb vorerst zum Zweck der Erkenntnisgewinnung untauglich.
 
-%
-%Über meine eigene Recherche hinaus habe ich mich in zahlreichen Diskussionen mit kompetenten Diskussionspartnern ausgetauscht.\\ %TODO
-%
-Im Philosophie-Unterricht ist gerade zum Thema Metaphysik immer diese Frage nach der Sinnhaftigkeit, über solche Problematiken zu philosophieren und zu diskutieren, aufgekommen. %Gegenstand spaeter
+Im Philosophie-Unterricht ist gerade zum Thema Metaphysik immer diese Frage nach der Sinnhaftigkeit, über solche Problematiken zu philosophieren und zu diskutieren, aufgekommen.
 Dabei ist mir klar geworden, dass der Zweck, über solche Themen zu diskutieren, nicht darin liegt, Erkenntnis über sie selbst zu gewinnen, sondern in vielerlei Hinsicht ein höheres philosophisches Verständnis zu gewinnen, sowie den Blick auf andere, konkretere Fragen der Philosophie (wie zum Beispiel in der Ethik) zu stärken. Zudem hat die Metaphysik - so sehr abstrakt und ohne Grundlage sie auch ist - im Leben vieler Menschen eine wichtige, sinngebende Rolle.
-
+%
 \subsection*{Recherche}
 Was die Herangehensweise betrifft, hat sich die geschichtsbezogene Recherche als verhältnismäßig einfach herausgestellt, während mich die Aneignung der sehr anspruchsvollen Literatur (es sei beispielsweise. nur die \glqq Kritik der reinen Vernunft\grqq\ \cite{kritik}
  zu nennen) sehr herausgefordert und einige Zeit gekostet hat. Ich habe versucht, mich vorwiegend auf Primärquellen zu beziehen; hierbei habe ich aufgrund der schwierigen Verfügbarkeit von (vor allem antik-historischen) Quellen oft auf digitalisierte Versionen der Originale zurückgegriffen.\\
-Meine Nachforschungen waren davon geprägt, dass ich meist den Verweisen einzelner Autoren nachgegangen bin und mir dadurch einen guten Überblick über die Thematik erschließen konnte. Weitere Hilfsmittel zur Verinnerlichung der Problematik benötigte ich nicht, da ich mich fortgesetzt mit der Frage beschäftigt und die vorigen Erkenntnisse immer wieder hinterfragt habe.\\
+Meine Nachforschungen waren davon geprägt, dass ich meist den Verweisen einzelner Autoren nachgegangen bin und mir dadurch einen guten Überblick über die Thematik erschließen konnte. Weitere Hilfsmittel zur Verinnerlichung der Problematik benötigte ich nicht, da ich mich fortgesetzt mit der Frage beschäftigt und die vorigen Erkenntnisse immer wieder hinterfragt habe.
 
 Aufgrund der Tatsache, dass ich mir relativ früh meiner Themenwahl bewusst war, und ich mich auch schon weitreichend informiert und beschäftigt habe, fiel mir - nach anfänglichen Schwierigkeiten - die Präzisierung der Themenwahl nicht allzu schwer, sodass diese in zwei kurzen Beratungsgesprächen mit meinem betreuenden Fachlehrer beendet werden konnte. Diese jedoch waren mir bei der weiterführenden Ausarbeitung sehr dienlich.
-
+%
 \subsection*{Vortragsart und Medienwahl}
 Auch wenn ich mit Gruppenarbeit gute Erfahrung gemacht habe, wie bei meiner MSA-Prüfung, 
 habe ich bei diesem Referat den Entschluss gefasst, dieses komplexe Thema allein zu bearbeiten.\\
 Was die Medienwahl betrifft, so eröffnet mir \LaTeX\ mehr Möglichkeiten als herkömmliche Präsentationsprogramme, sowie eine einfachere, transparentere und geordnetere Arbeitsweise.\\
 Dies ermöglicht mir eine sehr funktionale, übersichtliche Darstellung meiner Ergebnisse, zumal ich mit dieser freien, professionellen Buchsetzungssoftware sehr viel Erfahrung habe. Sie bietet mir Zusatzfunktionen, wie Quellenmanagement an.
-
+%
 \section*{Individuelle Reflexion}
 Wie schon erwähnt, war ich schon immer mit dem Thema des Skeptizismus sehr vertraut, habe jedoch im Laufe der Recherche einige sehr interessante neue Erkenntnisse für mich gewonnen. So sind mir einige skeptische Subpositionen bisher unbekannt gewesen und ich bedauere, leider nur eine Auswahl im Rahmen der 20-minütigen Präsentation vorstellen zu können.\\
-Dadurch konnte ich mich jedoch auf einzelne Haltungen fokussieren und diese meiner Meinung nach umso präziser ausarbeiten. Es machte für mich immer schon den Reiz der Philosophie aus, einmal \emph{nicht} eine konkrete Lösung suchen zu müssen, sondern wie ein transzendentaler Entdecker die Gedanken schweifen lassen zu können und ganz abstrakt, losgelöst von eigenen Haltungen, logische Schlüsse zu ziehen.\\%einmal 
+Dadurch konnte ich mich jedoch auf einzelne Haltungen fokussieren und diese meiner Meinung nach umso präziser ausarbeiten. Es machte für mich immer schon den Reiz der Philosophie aus, einmal \emph{nicht} eine konkrete Lösung suchen zu müssen, sondern wie ein transzendentaler Entdecker die Gedanken schweifen lassen zu können und ganz abstrakt, losgelöst von eigenen Haltungen, logische Schlüsse zu ziehen.
 
 Ich habe mich also für Philosophie entschieden, da ich eine Vorliebe dafür habe sehr frei - und mitunter sehr gewagt - gedanklich zu experimentieren. Zudem bietet einem die Philosophie die Möglichkeit, selbst feste \glqq Größen\grqq\ in ihrer Geschichte anzuzweifeln und zu kritisieren - unabhängig von der eigenen Reputation, solange die Argumentation verständlich und nachvollziehbar ist. Dies resultiert in einer blühenden Vielfalt an Theorien, da man niemandem Rechenschaft über diese ablegen muss.\\
 Der Skeptizismus, für mich die Brücke zwischen Erkenntnistheorie und Metaphysik, ist eine Position in der genau die Lebenseigenschaften dieser Geisteswissenschaft in konzentriertester Form vorkommen. Hoch abstrakt, aber durch und durch logisch, versucht man mit minimalistischsten Anforderungen, möglichst alle Möglichkeiten der \glqq Realität\grqq\ zu erfassen und zu ergründen - nicht, weil man konkrete Erkenntnis hieraus gewinnen kann, sondern aus anderen Gründen, die ich in meiner Präsentation vorstellen zu gedenke.
+%
 \subsection*{Relevanteste Quellen}
-\paragraph*{De trinitate X \cite{de_trini_x}} Aus Drittquellen konnte ich ein Zitat aus Augustinus von Hippos' Werk \glqq De trinitate X\grqq\  gewinnen. Ich war erstaunt, dass er mit diesem Decartes \glqq Cogito ergo sum\grqq\ rund 1200 Jahre
-vorausgenommen hat. %TODO evtl. Descartes als qulle hinzufuegen.
+\paragraph*{De trinitate X \cite{de_trini_x}} Aus Drittquellen konnte ich ein Zitat aus Augustinus von Hippos' Werk \glqq De trinitate X\grqq\  gewinnen. Ich war erstaunt, dass er mit diesem Decartes \glqq Cogito ergo sum\grqq\ rund 1200 Jahre vorausgenommen hat.
+%
 \paragraph{Kants \glqq Kritik der reinen Vernunft\grqq\ \cite{kritik}} Als ich über den Skeptiker Hume recherchiert habe, bin ich relativ schnell zu Kants Hauptwerk gekommen. Kant hat mit seiner \glqq Kritik\grqq\ eine weitere sehr interessante Sichtweise aufgezeigt, einen Meta-Sinn des Skeptizismus, der über seinen Zweck als erkenntnistheoretische Position hinausreicht. Er formulierte dies wie folgt: Zu einer \glqq gereiften [...] Urteilskraft\grqq\ gehöre es auch, dass diese \glqq feste und ihrer Allgemeinheit nach bewährte Maximen zum Grunde hat\grqq, welche dann \glqq nach ihrem ganzen Vermögen und Tauglichkeit zu reinen Erkenntnissen a priori, der Schätzung zu unterwerfen\grqq\ seien.
+%
 \paragraph*{Greek Skepticism: A Study in Epistemology \cite{greek_stough}} Weitere Erkenntnisse zu den Sophisten und griechischen Philosophen wie Gorgias und Pyrrho habe ich durch diese Lektüre gewinnen können. Eine sehr auf die griechische skeptische Philosophie fokussierte - aber dadurch auch sehr genaue - Arbeit.
-\paragraph*{Encyclopedia Britannica \cite{enc_brit}} Die \glqq Encyclopedia Britannica\grqq\ habe ich in der Version von 1911 aufgerufen, da neuere Auflagen, die mir zur Verfügung standen, das Thema der antiken Akedamie nicht ausreichend behandeln. Durch das Material dieser umfassenden Enzyklopädie konnte ich die Sokrates'sche Philosophie genauer von der des Arkesilaos, dem Leiter der Platon'schen Akademie, zu ihrer skeptischen Phase, abgrenzen.
-%\nocite{lex_phil}
-%\nocite{ges_phil}
-%\nocite{iep_solipsis}
-%\nocite{enc_brit_sophist}
-%\nocite{iep_on-the-nonex} 
+%
+\paragraph*{Encyclopedia Britannica \cite{enc_brit_sophist,enc_brit_acad}} Die \glqq Encyclopedia Britannica\grqq\ habe ich in der Version von 1911 aufgerufen, da neuere Auflagen, die mir zur Verfügung standen, das Thema der antiken Akedamie nicht ausreichend behandeln. Durch das Material dieser umfassenden Enzyklopädie konnte ich die Sokrates'sche Philosophie genauer von der des Arkesilaos, dem Leiter der Platon'schen Akademie, zu ihrer skeptischen Phase, abgrenzen. Eine neuere Version der Britannica nahm ich zu Hilfe, um Genaueres über die Sophisten zu erfahren.
+%
 \nocite{*}
 \pagebreak
 \printbibliography
 \end{document}
-
-%TODO abkuerzungen
