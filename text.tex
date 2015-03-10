@@ -2,40 +2,23 @@
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-% Times New Roman
-\usepackage{newtxtext}
-%\usepackage{fontspec}
-%\setmainfont{Times New Roman}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\linespread{1.5}
+\usepackage{csquotes}
+
+%\usepackage{graphicx}
+%\linespread{1.5}
 \usepackage[left=4cm,right=2cm,top=3cm,bottom=3cm]{geometry}
 %\usepackage[left=2cm,right=8cm,top=3cm,bottom=3cm]{geometry}
 \author{Leonard König}
 \title{Skeptizismus - Flucht der Philosophie vor der Frage nach der Erkenntnis?}
 % personalpronomen? Ja, Nein?
 
-%\usepackage[
-% %   backend=biber,
-%    style=authoryear-icomp,
-%    sortlocale=de_DE,
-%    natbib=true,
-%    url=false, 
-%    doi=true,
-%    eprint=false
-%]{biblatex}
-
 \usepackage[
+	natbib=true,
     backend=biber,
     style=numeric,
+    citestyle=numeric,
     sorting=nty,
     sortlocale=de_DE,
-    %natbib=true,
-    %url=true, 
-    %doi=true,
-    %eprint=true
 ]{biblatex}
 \addbibresource{text.bib}
 
@@ -56,7 +39,7 @@ Der Duden sagt über den Skeptizismus:\\
 Im strengeren Sinne Richtungen, die die Beweisbarkeit von Wahrheit (entweder prinzipiell oder partiell) in Zweifel ziehen.\grqq\% Zitat checken, cite nutzen etc.
 \\Einer der moderneren Hauptvertreter des Skeptizismus ist
 %unter anderen?
-der Philosoph Hume.\\%Quelle
+der Philosoph Hume.%Quelle
 		\subsubsection{Agnostizismus}
 Der Begriff \glqq Agnostizismus\grqq\ wurde vom Biologen Thomas Henry Huxley geprägt. Agnostizismus ist oft als eine Unterposition des Skeptizismus aufzufassen, in der man davon ausgeht, dass über jegliche oder nur bestimmte überirdische% irden/irdlich/mystisch?
 \ Ideen - wie beispielsweise einem Gott oder der Wiedergeburt - keine Erkenntnis zu gewinnen ist. In der Regel fasst man den Begriff noch enger um eine Religion, sprich als Abgrenzung zu The- und Atheisten.\\ 
@@ -65,7 +48,7 @@ Vereinzelt jedoch wird der Begriff Agnostizismus synonym zum Skeptizismus verwen
 Der Solipsismus ist eine philosophische Schule, die Allem außer meiner Selbst gegenüber eine skeptische Haltung einnimmt. Solche Philosophen vertreten die Meinung, dass entweder nur ihre eigene Existenz gesichert ist, oder, dass die Bedeutung der Wahrnehmung vom Zustand des eigenen (denkenden) Ichs abhängt \cite{iep_solipsis}.
 \section{Skeptizismus im historischen Kontext}
 	\subsection{Antike - die Sophisten}
-Ein kurzer Überblick: Die Sophisten waren Wanderlehrer, die Diskussion und antike Formen der Philosophie lehrten. Hierbei interessiert natürlich vor allem die Epistemologie/Erkenntnistheorie der Antike. Sie haben jedoch logischerweise nicht unbedingt ähnliche Ansichten, was diese Richtung der Philosophie betrifft, schließlich waren die Schulen teilweise um Jahrhunderte entfernt. Während Protagoras den Menschen für das Maß aller Dinge hält \cite{enc_brit_sophist}% Begründung logischerweise <- fixed?
+Ein kurzer Überblick: Die Sophisten waren Wanderlehrer, die Diskussion und antike Formen der Philosophie lehrten. Hierbei interessiert natürlich vor allem die Epistemologie\slash Erkenntnistheorie der Antike. Sie haben jedoch logischerweise nicht unbedingt ähnliche Ansichten, was diese Richtung der Philosophie betrifft, schließlich waren die Schulen teilweise um Jahrhunderte entfernt. Während Protagoras den Menschen für das Maß aller Dinge hält \cite{enc_brit_sophist}% Begründung logischerweise <- fixed?
 , ist Gorgias einem dogmatischen Skeptizismus zuzuordnen:
 \begin{itemize}
 \item Nichts existiert;
@@ -75,8 +58,8 @@ Ein kurzer Überblick: Die Sophisten waren Wanderlehrer, die Diskussion und anti
 \end{itemize}
 Radikale Skeptiker würden selbst der letzten Aussage noch skeptisch gegenüber stehen.\\
 Pyrrho beispielsweise meinte: \glqq unsere Sinneserfahrungen und Ansichten sind weder wahr, noch falsch\grqq\ \cite{greek_stough}.
-Es gibt jedoch einige Strömungen des Skeptizismus. So gibt es den akademischen Skeptizismus, der die Aussage trifft, dass Wissen nicht möglich ist. Der Skeptizismus nach Pyrrho geht nicht so dogmatisch vor, sondern behauptet, man könne über die Aussage selbst, also, dass kein Wissen möglich ist, keine wirkliche Aussage treffen kann (radikaler Skeptizismus).% %TODO http://en.wikipedia.org/wiki/Philosophical_skepticism
-Eigentlich verfolgte Pyrrho jedoch das Ziel der Ataraxia, der mentalen Unerschütterlichkeit.\\
+Es gibt jedoch einige Strömungen des Skeptizismus. So gibt es den akademischen Skeptizismus, der die Aussage trifft, dass Wissen nicht möglich ist. Der Skeptizismus nach Pyrrho geht nicht so dogmatisch vor, sondern behauptet, man könne über die Aussage selbst, also, dass kein Wissen möglich ist, keine wirkliche Aussage treffen kann (radikaler Skeptizismus). % %TODO http://en.wikipedia.org/wiki/Philosophical_skepticism
+Eigentlich verfolgte Pyrrho jedoch das Ziel der Ataraxia, der mentalen Unerschütterlichkeit.
 % ( %TODO http://en.wikipedia.org/wiki/Pyrrho ; Ataraxia <=> Lethargie)
 
 Der siebte Leiter der antiken Akademie, Arkesilaos, begründete den akademischen Skeptizismus. Er schloss sich dabei seinen Vorgängern an, dass es keine Wahrheit gäbe, weil zu beliebigen (philosophischen) Aussagen gleichberechtigte Gegenargumente oder Positionen zu finden seien.
@@ -90,7 +73,7 @@ Dennoch beschäftigte sich Augustinus weiterhin mit der Wahrheit und nahm dabei 
 Descartes hat zwei sehr bedeutende Dinge von seinen Vorgängern (eventuell unwissend) übernommen: Den methodischen Zweifel (von Sokrates) und, wie gerade erwähnt, den Ausspruch \glqq ich zweifle, also bin ich\grqq.\\% -- "(eventuell unwissend)" ?
 Descartes hat damit versucht, ohne jede Voraussetzung von einer Wahrheit zumindest \emph{irgendetwas} zu \glqq beweisen\grqq, etwas was über allen Zweifel erhaben ist.\\
 Er meinte, man könne zweifeln so viel man möge, an allem und jedem, aber, genau das zeige, man zweifele. Also existiere man.\\ % -- möge ++wolle ?
-\emph{Doch: Weiß man, dass man wirklich zweifelt?}\\ % evtl. als Überleitung nutzen, sonst verlaengern. Einbetten: "Ich bezweifle das."
+\emph{Doch: Weiß man, dass man wirklich zweifelt?} % evtl. als Überleitung nutzen, sonst verlaengern. Einbetten: "Ich bezweifle das."
 
 Gegner des Rationalisten Descartes waren die Empiristen. Empiriker meinen, Erkenntnis könne (nur) durch Erfahrung gewonnen werden - im Gegensatz zum Rationalismus, der lehrt man habe angeborene Ideen, die nur bestätigt werden müssten. Deshalb ist der Empirismus oft auch "näher" am Skeptizismus, schließlich liegt es nahe, dass, wenn man nur durch Wahrnehmung zu Erkenntnis gelangt, diese Wahrnehmung verfälscht ist und man damit zu keiner "echten" Erkenntnis kommt. David Hume, ein britischer Empirist, war genau dieser Auffassung.\\ % naheligend doppelt; dass entfernen
 Diese Probleme von den Arten der Erkenntnis und ob es überhaupt eine Erkenntnis gibt, sowie über die Problematik der Induktion behandelt er in seinem ersten großen Werk \glqq A Treatise of Human Nature\grqq.
@@ -146,7 +129,11 @@ Jedoch soll dies nicht die einzige Beurteilung einer philosophischen Richtung se
 
 %Ende:
 Wenn man weiter prüft, muss man eingestehen, dass der Skeptizismus in \textbf{der} Hinsicht von Nutzen ist als dass er einen mit dem Mittel ausstattet, aktiv vom täglichen praktischen Dogmatismus zurückzukehren und alles zu hinterfragen.
-	\subsection{Schluss}
+%	\subsection{Schluss}
+\printbibliography
+\end{document}
+
+
 
 
 
@@ -158,11 +145,6 @@ Wenn man weiter prüft, muss man eingestehen, dass der Skeptizismus in \textbf{d
 %-------------\\
 %Übergangsliste:
 %Antike -(Akademie)-> MittelA. -(Augustinus \glqq cogito ergo sum\grqq\ )-> Rat.+Emp. -(Kant)-> Moderne
-\section*{Quellen}
-\printbibliography
-\end{document}
-
-
 
 
 ---------------
