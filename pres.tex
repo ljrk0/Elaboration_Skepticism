@@ -1,14 +1,15 @@
 \documentclass[12pt]{beamer}
 \usetheme[hideothersubsections]{Berkeley}
 \usepackage[utf8]{inputenc}
-\usepackage[german]{babel}
+\usepackage[polutonikogreek,ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx} %TODO Logo!
 \graphicspath{{images/}}
 \usepackage{csquotes}
+\usepackage{textgreek}
 
-\author[L. König]{Leonard König}
-\title[Skeptizismus]{Skeptizismus - Flucht der Philosophie vor der Frage nach der Erkenntnis?}
+\author{Leonard König}
+\title[Skeptizismus]{Skeptizismus – Flucht der Philosophie vor der Frage nach der Erkenntnis?}
 %\setbeamercovered{transparent} 
 %\setbeamertemplate{navigation symbols}{} 
 \logo{\includegraphics[scale=0.4]{logo.png}} 
@@ -20,22 +21,26 @@
 % personalpronomen? Ja, Nein?
 
 %\setlength{\parskip}{1em}
-\usepackage[
-	natbib=true,
-    backend=biber,
-    style=numeric,
-    citestyle=numeric,
-    sorting=nty,
-    sortlocale=de_DE,
-]{biblatex}
-\addbibresource{text.bib}
+%\usepackage[
+%	natbib=true,
+%    backend=biber,
+%    style=numeric,
+%    citestyle=numeric,
+%    sorting=nty,
+%    sortlocale=de_DE,
+%]{biblatex}
+%\addbibresource{text.bib}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
 
 \begin{document}
 \begin{frame}
 \titlepage
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Gliederung}
 \tableofcontents
 \end{frame}
 
@@ -66,7 +71,8 @@ Agnostizismus:
 \item geprägt von Thomas Henry Huxley
 \item bezog sich vor Allem auf den Glauben
 \item[$\Rightarrow$] Unabhängigkeit der Wissenschaft von Religion herstellen
-\item Herkunft: $\grave{\alpha}\gamma\nu\bar{\omega}\sigma\iota\varsigma$: \glqq ohne Wissen\grqq\
+\item Herkunft: \\
+{\selectlanguage{polutonikogreek}\`{\textalpha}γν\={\textomega}σις}: \glqq ohne Wissen\grqq\
 \item[$\Rightarrow$] vereinzelt synonym zu Skeptizismus verwendet
 \end{itemize}
 \end{frame}
@@ -82,8 +88,8 @@ Solipsismus:
 \end{frame}
 
 \section{Skeptizismus im historischen Kontext}
-\subsection{Antike - die Sophisten} %TODO Ordnen, historisch u. nach Position
-\begin{frame}{Antike - die Sophisten}
+\subsection{Antike – die Sophisten}
+\begin{frame}{Antike – die Sophisten}
 Sophisten waren Wanderlehrer, sie unterrichteten
 \begin{itemize}
 \item Diskussion
@@ -95,9 +101,7 @@ Jedoch entstanden, zeitbedingt, viele unterschiedliche Schulen
 %TODO Zeitbedingt? Rechtschreibung!
 \end{frame}
 
-\begin{frame}{Protagoras und Gorgias}
-Protagoras: Mensch als Maß aller Dinge\\% \cite{enc_brit_sophist} %TODO
-\ \\
+\begin{frame}{dogmatischer Skeptizismus}
 Gorgias: dogmatischer Skeptizismus:
 \begin{itemize}
 \item Nichts existiert;
@@ -106,17 +110,18 @@ Gorgias: dogmatischer Skeptizismus:
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Radikaler vs. akademischer Skeptizismus}
-\textbf{Akademischer Skeptizismus:}\\
-$\rightarrow$ keinerlei Wissen möglich\\
+\begin{frame}{Radikaler und akademischer Skeptizismus}
 \textbf{Radikaler Skeptizismus:}\\
 $\rightarrow$ kritische Ansichten gegenüber \emph{jeder} Aussage:\\
-\glqq unsere Sinneserfahrungen und Ansichten sind weder wahr, noch falsch\grqq\ %\cite{greek_stough} %TODO
-% Der Skeptizismus nach Pyrrho geht nicht so dogmatisch vor, sondern behauptet, man könne über die Aussage selbst, also, dass kein Wissen möglich ist, keine wirkliche Aussage treffen kann (radikaler Skeptizismus). % %TODO http://en.wikipedia.org/wiki/Philosophical_skepticism
+\glqq unsere Sinneserfahrungen und Ansichten sind weder wahr, noch falsch\grqq\ %\cite{greek_stough}
+\textbf{Akademischer Skeptizismus:}\\
+\begin{itemize}
+\item Eingeläutet durch Arkesilaos in der Akademie
+\item[$\rightarrow$] keinerlei Wissen möglich
+\end{itemize}
 \end{frame}
 
-%Der siebte Leiter der antiken Akademie, Arkesilaos, begründete den akademischen Skeptizismus. Er schloss sich dabei seinen Vorgängern an, dass es keine Wahrheit gäbe, weil zu beliebigen (philosophischen) Aussagen gleichberechtigte Gegenargumente oder Positionen zu finden seien. %TODO contradiction!!!
-\subsection{Mittelalter - akademischer Skeptizismus versus Kirche}
+\subsection{Mittelalter – akademischer Skeptizismus versus Kirche}
 %TODO Bis hier: 5min
 \begin{frame}{Augustinus}
 Augustinus:
@@ -162,7 +167,7 @@ Zu einer  \glqq gereiften [\ldots] Urteilskraft\grqq\ gehöre es auch, dass dies
 \subsection{Moderner Skeptizismus}
 %TODO 10min
 %TODO Kritizismus erlaeutern
-\begin{frame}{Ethik: Der Nihilismus}
+\begin{frame}{Ethik: Der Nihilismus – Nietzsche}
 Ethik:\\
 \begin{itemize}
 \item logisch folgerichtige \glqq Beweisführung\grqq\ für einen Nihilismus
@@ -178,11 +183,6 @@ Nietzsche:\\
 %TODO Verlust der Metaphysik: Nachrecherchieren! Axiome?
 \end{frame}
 
-\begin{frame}{Von Nietzsche zu Nelson}
-Nelson: \glqq Die Unmöglichkeit der Erkenntnistheorie\grqq
-%TODO fuellen
-\end{frame}
-%TODO Ueberleitung
 
 \begin{frame}{Popper: Kritischer Realismus}
 \begin{itemize}
@@ -194,8 +194,8 @@ Nelson: \glqq Die Unmöglichkeit der Erkenntnistheorie\grqq
 %TODO %Diese Position nennt man kritischen Realismus.% Rationalismus? sicher? uebepruefen!
 \end{frame}
 
-\section{Reflexion - Skeptizismus als Lebenseinstellung?}
-\begin{frame}
+\section{Reflexion – Skeptizismus als Lebenseinstellung?}
+\begin{frame}{Fragen}
 \begin{itemize}
 \item Sicht Skeptizismus im Kontext der Leitfrage?\\
 verschiedene Haltungen des Skeptizismus differenziert zu betrachten?
@@ -209,11 +209,11 @@ sinnvoll in abstrakterem Kontext? %konkreter
 \end{frame}
 
 \begin{frame}{Antworten}
-Vor allem erkenntnistheoretische und metaphysische Aspekte relevant:\\
-$\Rightarrow$ Radikaler Skeptizismus und daraus abgeleitete Positionen\\
-
-Durch Begrenzen auf die Logik, eine in sich sehr konsistente Bearbeitung eines abstrakten Themas\\
-Mag \glqq einfach\grqq wirken, dh. jedoch noch keine \glqq Flucht\grqq .
+erkenntnistheoretische und metaphysische Aspekte relevant:\\
+$\Rightarrow$ Radikaler Skeptizismus\\
+\ \\
+\glqq triviale\grqq , logische Bearbeitung eines komplexen Themas\\
+$\rightarrow$ trotzdem keine \glqq Flucht\grqq
 %TODO verstichpunkten
 \end{frame}
 
@@ -249,8 +249,8 @@ Meta-Sinn:
 
 \begin{frame}{Das \glqq Universum\grqq\ des Skeptizismus}
 Vor.: Wir \glqq glauben\grqq wir denken. wissen aber nicht, was wir eigentlich tun, falls nicht \glqq glauben\grqq \\
-Fall \RN{1}: Wir denken. Ergo, existieren \glqq wir\grqq . \\
-Fall \RN{2}: Wir denken nicht. Ergo \glqq existiert\grqq\ irgendetwas, was uns glauben macht, zu denken\\
+Fall \rom{1}: Wir denken. Ergo, existieren \glqq wir\grqq . \\
+Fall \rom{2}: Wir denken nicht. Ergo \glqq existiert\grqq\ irgendetwas, was uns glauben macht, zu denken\\
 \ \\
 Beispielsweise: Ein Programm, Algorithmus, \ldots - eine \glqq Steuerung\grqq\ von \glqq außen\grqq
 \end{frame}
